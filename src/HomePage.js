@@ -29,7 +29,7 @@ export const HomePage = () => {
 
   const fetchWeatherByCities = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/get_weather_by_cities", {
+      const response = await axios.post("https://weather-tracker-app-7cy5.onrender.com/get_weather_by_cities", {
         cities: selectedCities.split(","),
       });
       setCitiesData(response.data);
@@ -69,7 +69,7 @@ export const HomePage = () => {
     } else {
       setPageLoading(true);
       axios
-        .post("http://localhost:5000/get_weather", {
+        .post("https://weather-tracker-app-7cy5.onrender.com/get_weather", {
           zip_code: zipCode,
           country_code: countryCode,
         })
