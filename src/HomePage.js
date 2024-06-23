@@ -42,19 +42,19 @@ export const HomePage = () => {
   };
 
   const handleSearchWeather = () => {
-    if (!zipCode || zipCode == "") {
+    if (!zipCode || zipCode === "") {
       notification.open({
         message: "Please select  zipcode",
         type: "error",
       });
       return;
-    } else if (!countryCode || countryCode == "") {
+    } else if (!countryCode || countryCode === "") {
       notification.open({
         message: "Please select  country code",
         type: "error",
       });
       return;
-    } else if (!selectedCities || selectedCities.split(",").length == 0) {
+    } else if (!selectedCities || selectedCities.split(",").length === 0) {
       notification.open({
         message: "Please select some cities",
         type: "error",
