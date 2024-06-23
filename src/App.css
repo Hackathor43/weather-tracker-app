@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.mb10{
+  margin-bottom: 10px;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.font-weight-600{
+  font-weight: 600;
+}
+
+.font-weight-800{
+  font-weight: 800;
+}
+
+.font-weight-400{
+  font-weight: 400;
+}
+
+.font-18{
+  font-size: 22px;
+}
+
+.font-16{
+  font-size: 16;
+}
+.font-14{
+  font-size: 14;
+}
+.font-12{
+  font-size: 12;
+}
