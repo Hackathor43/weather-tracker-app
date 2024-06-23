@@ -6,11 +6,6 @@ from flask_cors import CORS, cross_origin
 main = Blueprint('main', __name__)
 CORS(main, support_credentials=True)
 
-@main.route('/')
-@cross_origin(supports_credentials=True)
-def index():
-    return render_template('index.html')
-
 
 
 @main.route('/get_weather', methods=['POST'])
